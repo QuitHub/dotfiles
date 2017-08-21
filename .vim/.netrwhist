@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/lukematthews/Documents/Computing/aName'
+let g:netrw_dirhist_2='/Users/lukematthews/Downloads/keithmannock-progpara2015-b442ae4c6012/coursework/polyglot/.git'
+let g:netrw_dirhist_3='/private/var/folders/gy/b1h6848173l_g_41zdzky6dm0000gn/C/com.apple.iCal'
+let g:netrw_dirhist_4='/Users/lukematthews/Documents'
