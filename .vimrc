@@ -1,5 +1,3 @@
-
-
 set nocompatible            
 filetype off   
 
@@ -9,6 +7,7 @@ call vundle#begin()
 
 " PLUGINS
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-unimpaired'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -71,7 +70,7 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 syntax enable
-colorscheme corporation
+colorscheme nord
 set cursorline
 set number
 set tabstop=4       " The width of a TAB is set to 4.
