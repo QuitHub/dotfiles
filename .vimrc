@@ -13,6 +13,9 @@ Plugin 'majutsushi/tagbar'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bumaociyuan/vim-swift'
 Plugin 'arcticicestudio/nord-vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'derekwyatt/vim-scala'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -39,10 +42,6 @@ ino <up> <Nop>
 " SEARCH
 set ignorecase
 set incsearch
-
-" SPLITS
-nmap <C-v> :vsplit<CR>
-nmap <C-h> :split<CR>
 
 " KEYBINDINGS
 nnoremap <C-e> :NERDTreeToggle<CR>  
