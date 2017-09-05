@@ -131,3 +131,33 @@ alias rang="python ~/Apps/ranger/ranger.py"
 alias gitch="git checkout master"
 
 /usr/bin/setxkbmap -option "caps:swapescape"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# Set vi keybindings for terminal
+bindkey -v
+
+bindkey '^P' up-history
+bindkey '^N' down-history
+bindkey '^?' backward-delete-char
+bindkey '^h' backward-delete-char
+bindkey '^w' backward-kill-word
+bindkey '^r' history-incremental-search-backward
+
+function zle-line-init zle-keymap-select {
+    RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+    RPS2=$RPS1
+    zle reset-prompt
+}
+        
+zle -N zle-line-init
+zle -N zle-keymap-select
+export KEYTIMEOUT=1
+        
+alias sfe="~/hmpo/frontend/start.sh"
+alias cdbe="cd ~/hmpo/backend"
+alias cdfe="cd ~/hmpo/frontend"
+alias pm2="~/hmpo/frontend/frontend-proxy-local/.bin/pm2"

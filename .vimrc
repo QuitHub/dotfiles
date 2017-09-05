@@ -8,6 +8,9 @@ call vundle#begin()
 " PLUGINS
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -15,6 +18,8 @@ Plugin 'bumaociyuan/vim-swift'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'vim-airline/vim-airline'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -68,6 +73,7 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
+
 syntax enable
 colorscheme nord
 set cursorline
