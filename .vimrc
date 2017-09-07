@@ -62,6 +62,8 @@ nmap <C-b> :cp<CR>
 " SEARCH - KEYBINDINGS
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
+" USE ZSH
+set shell=zsh
 " SILVER SEARCH
 if executable('ag')
   " Use ag over grep

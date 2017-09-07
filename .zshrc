@@ -160,4 +160,3 @@ export KEYTIMEOUT=1
 alias sfe="~/hmpo/frontend/start.sh"
 alias cdbe="cd ~/hmpo/backend"
 alias cdfe="cd ~/hmpo/frontend"
-alias pm2="~/hmpo/frontend/frontend-proxy-local/.bin/pm2"
